@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>grab</title>
+</head>
+<body>
+<nav th:fragment="navBar" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="/image/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Grab food
+    </a>
+</nav>
+
+<nav th:fragment="store-owner-login-navBar" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="/image/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Grab food
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Thông tin cửa hàng <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/store/add-product}">Thêm sản phẩm <span class="sr-only">(current)</span></a>
+            </li>
+
+
+        </ul>
+
+    </div>
+
+    </a>
+</nav>
+
+
+</body>
+</html>
